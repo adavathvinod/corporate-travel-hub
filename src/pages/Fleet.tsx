@@ -6,6 +6,7 @@ import {
   Car, Users, Shield, Wrench, CheckCircle2, 
   ArrowRight, Sparkles, Clock, FileCheck
 } from "lucide-react";
+import teamFleetImage from "@/assets/team-fleet.png";
 
 const vehicles = [
   {
@@ -97,7 +98,7 @@ export default function Fleet() {
       <Header />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-corporate-navy via-primary-dark to-primary text-primary-foreground py-20">
+        <section className="bg-gradient-to-br from-primary-dark via-primary to-primary-light text-primary-foreground py-20">
           <div className="container">
             <div className="max-w-3xl">
               <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-sm font-medium mb-4">
@@ -114,8 +115,33 @@ export default function Fleet() {
           </div>
         </section>
 
+        {/* Team & Fleet Gallery */}
+        <section className="py-16 bg-background">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                Our Team & Fleet
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Meet Our Professional Team
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Our dedicated drivers and modern fleet ensure safe, comfortable transportation for your employees.
+              </p>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden shadow-xl border border-border">
+              <img 
+                src={teamFleetImage} 
+                alt="Aditya Travels Team and Fleet" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Fleet Gallery */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-card">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
@@ -133,10 +159,10 @@ export default function Fleet() {
               {vehicles.map((vehicle) => (
                 <div 
                   key={vehicle.type}
-                  className="bg-card rounded-2xl border border-border overflow-hidden hover:shadow-card-hover transition-shadow"
+                  className="bg-background rounded-2xl border border-border overflow-hidden hover:shadow-card-hover transition-shadow"
                 >
-                  <div className="h-48 bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center">
-                    <Car className="h-20 w-20 text-muted-foreground/30" />
+                  <div className="h-48 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                    <Car className="h-20 w-20 text-primary/30" />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-2">
@@ -168,10 +194,10 @@ export default function Fleet() {
         </section>
 
         {/* Safety Protocols */}
-        <section className="py-20 bg-card">
+        <section className="py-20 bg-background">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-[hsl(158,64%,40%)]/10 text-[hsl(158,64%,40%)] text-sm font-medium mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-corporate-green/10 text-corporate-green text-sm font-medium mb-4">
                 Safety First
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -187,9 +213,9 @@ export default function Fleet() {
               {safetyProtocols.map((protocol) => (
                 <div 
                   key={protocol.title}
-                  className="bg-background rounded-2xl border border-border p-6 hover:border-[hsl(158,64%,40%)]/30 transition-colors"
+                  className="bg-card rounded-2xl border border-border p-6 hover:border-corporate-green/30 transition-colors"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[hsl(158,64%,40%)]/10 text-[hsl(158,64%,40%)] flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-corporate-green/10 text-corporate-green flex items-center justify-center mb-4">
                     <protocol.icon className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{protocol.title}</h3>
@@ -201,7 +227,7 @@ export default function Fleet() {
         </section>
 
         {/* Driver Standards */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-card">
           <div className="container">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -226,24 +252,24 @@ export default function Fleet() {
                     "Regular health check-ups and fitness certifications"
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-[hsl(158,64%,40%)] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-corporate-green shrink-0 mt-0.5" />
                       <span className="text-foreground">{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="bg-card rounded-2xl border border-border p-8">
+              <div className="bg-background rounded-2xl border border-border p-8">
                 <div className="text-center">
                   <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                     <Users className="h-12 w-12 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">24</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">24+</h3>
                   <p className="text-muted-foreground mb-6">Professional Drivers</p>
                   
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div className="p-4 rounded-lg bg-muted">
-                      <div className="text-2xl font-bold text-[hsl(158,64%,40%)]">100%</div>
+                      <div className="text-2xl font-bold text-corporate-green">100%</div>
                       <div className="text-xs text-muted-foreground">Verified</div>
                     </div>
                     <div className="p-4 rounded-lg bg-muted">
@@ -258,7 +284,7 @@ export default function Fleet() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 bg-gradient-to-br from-corporate-navy via-primary-dark to-primary text-primary-foreground">
+        <section className="py-20 bg-gradient-to-br from-primary-dark via-primary to-primary-light text-primary-foreground">
           <div className="container text-center">
             <h2 className="text-3xl font-bold mb-4">
               Ready to Experience Safe, Reliable Travel?
