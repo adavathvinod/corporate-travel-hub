@@ -6,98 +6,102 @@
 
 @layer base {
   :root {
-    /* Corporate Blues - Primary */
-    --primary: 215 90% 32%;
+    /* Aditya Travels Red - Primary */
+    --primary: 0 75% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 215 85% 45%;
-    --primary-dark: 215 95% 22%;
+    --primary-light: 0 70% 55%;
+    --primary-dark: 0 80% 35%;
     
     /* Backgrounds */
-    --background: 210 20% 98%;
-    --foreground: 215 25% 15%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
     
     /* Cards & Surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 0 0% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 0 0% 12%;
     
     /* Secondary - Slate Grey */
-    --secondary: 215 15% 94%;
-    --secondary-foreground: 215 25% 25%;
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 0 0% 25%;
     
     /* Muted */
-    --muted: 215 15% 92%;
-    --muted-foreground: 215 12% 50%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
     
-    /* Accent - Emerald Green for Trust/Safety */
-    --accent: 158 64% 40%;
+    /* Accent - Gold/Yellow for Trust */
+    --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 158 60% 48%;
+    --accent-light: 38 85% 58%;
     
     /* Destructive */
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
     
     /* Borders & Inputs */
-    --border: 215 20% 88%;
-    --input: 215 20% 88%;
-    --ring: 215 90% 32%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 75% 45%;
     
     --radius: 0.625rem;
     
     /* Sidebar */
-    --sidebar-background: 215 25% 12%;
-    --sidebar-foreground: 215 15% 90%;
-    --sidebar-primary: 215 90% 55%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 75% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 25% 18%;
-    --sidebar-accent-foreground: 215 15% 90%;
-    --sidebar-border: 215 20% 20%;
-    --sidebar-ring: 215 90% 55%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 75% 50%;
     
-    /* Custom - Corporate Palette */
-    --corporate-navy: 215 45% 18%;
-    --corporate-blue: 215 90% 32%;
-    --corporate-sky: 200 85% 55%;
-    --corporate-slate: 215 15% 45%;
-    --corporate-green: 158 64% 40%;
+    /* Custom - Aditya Travels Palette */
+    --corporate-navy: 0 0% 12%;
+    --corporate-red: 0 75% 45%;
+    --corporate-crimson: 0 80% 38%;
+    --corporate-slate: 0 0% 40%;
     --corporate-gold: 38 92% 50%;
+    --corporate-green: 158 64% 40%;
+    
+    /* Legacy aliases for compatibility */
+    --corporate-blue: 0 75% 45%;
+    --corporate-sky: 0 70% 55%;
     
     /* Gradients */
-    --gradient-corporate: linear-gradient(135deg, hsl(215 90% 32%) 0%, hsl(215 45% 18%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(215 45% 18%) 0%, hsl(215 90% 25%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(215 20% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(158 64% 40%) 0%, hsl(158 60% 32%) 100%);
+    --gradient-corporate: linear-gradient(135deg, hsl(0 75% 45%) 0%, hsl(0 80% 30%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 12%) 0%, hsl(0 75% 35%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(0 75% 45%) 0%, hsl(0 80% 35%) 100%);
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -2px hsl(215 25% 15% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -4px hsl(215 25% 15% / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(215 25% 15% / 0.1), 0 8px 10px -6px hsl(215 25% 15% / 0.1);
-    --shadow-corporate: 0 25px 50px -12px hsl(215 90% 32% / 0.25);
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 12% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 12% / 0.1), 0 2px 4px -2px hsl(0 0% 12% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 12% / 0.1), 0 4px 6px -4px hsl(0 0% 12% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 12% / 0.1), 0 8px 10px -6px hsl(0 0% 12% / 0.1);
+    --shadow-corporate: 0 25px 50px -12px hsl(0 75% 45% / 0.25);
   }
 
   .dark {
-    --background: 215 25% 10%;
-    --foreground: 210 20% 98%;
-    --card: 215 25% 12%;
-    --card-foreground: 210 20% 98%;
-    --popover: 215 25% 12%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 215 85% 55%;
-    --primary-foreground: 215 25% 10%;
-    --secondary: 215 20% 18%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 20% 18%;
-    --muted-foreground: 215 15% 60%;
-    --accent: 158 60% 48%;
-    --accent-foreground: 215 25% 10%;
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 38 85% 55%;
+    --accent-foreground: 0 0% 10%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
-    --border: 215 20% 22%;
-    --input: 215 20% 22%;
-    --ring: 215 85% 55%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 70% 55%;
   }
 }
 

@@ -14,27 +14,27 @@ export function HeroSection() {
       </div>
       
       {/* Animated Shapes */}
-      <div className="absolute top-20 right-20 w-72 h-72 bg-corporate-sky/20 rounded-full blur-3xl animate-pulse-slow" />
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-corporate-green/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-20 right-20 w-72 h-72 bg-primary-light/20 rounded-full blur-3xl animate-pulse-slow" />
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-corporate-gold/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
 
       <div className="container relative z-10 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-primary-foreground space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 text-sm backdrop-blur-sm animate-fade-up">
-              <Shield className="h-4 w-4 text-corporate-green" />
-              <span>Trusted by 19+ Leading Corporations</span>
+              <Shield className="h-4 w-4 text-corporate-gold" />
+              <span>Trusted by 7+ Leading Corporations Since 2019</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              Your Premier
-              <span className="block text-corporate-sky">Corporate Travel</span>
-              Partner
+              Your Corporate
+              <span className="block text-corporate-gold">Travel Partner</span>
+              for Safe Rides
             </h1>
             
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-xl animate-fade-up" style={{ animationDelay: '0.2s' }}>
-              Technology-driven employee commute and executive transportation solutions. 
-              Safe, reliable, and available 24×7 across India.
+              Founded in 2019, Aditya Travels began its journey with a vision to simplify corporate 
+              employee transportation for Hyderabad's IT industry. Safe, Smart & Sustainable rides.
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: '0.3s' }}>
@@ -55,7 +55,7 @@ export function HeroSection() {
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-primary-foreground/20 animate-fade-up" style={{ animationDelay: '0.4s' }}>
               <div>
-                <div className="text-3xl font-bold text-corporate-sky">60+</div>
+                <div className="text-3xl font-bold text-corporate-gold">60+</div>
                 <div className="text-sm text-primary-foreground/70">Daily Trips</div>
               </div>
               <div>
@@ -63,7 +63,7 @@ export function HeroSection() {
                 <div className="text-sm text-primary-foreground/70">Client Retention</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-corporate-gold">0</div>
+                <div className="text-3xl font-bold text-primary-light">0</div>
                 <div className="text-sm text-primary-foreground/70">Breakdowns</div>
               </div>
             </div>
@@ -94,7 +94,7 @@ export function HeroSection() {
                   </div>
                   <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
                     <span className="text-sm text-muted-foreground">Vehicles Active</span>
-                    <span className="font-semibold text-corporate-sky">24</span>
+                    <span className="font-semibold text-corporate-gold">24</span>
                   </div>
                 </div>
               </div>
