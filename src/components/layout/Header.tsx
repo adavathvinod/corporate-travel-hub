@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MapPin, Shield, LogIn } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.jpeg";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -32,21 +33,21 @@ export function Header() {
         <div className="container flex items-center justify-between text-sm">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-corporate-sky" />
+              <MapPin className="h-4 w-4 text-primary" />
               <span>Hyderabad, Telangana, India</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="h-4 w-4 text-corporate-green" />
-              <span>Safe. Reliable. 24×7 Commute.</span>
+              <span>On Time. Every Time. With Care.</span>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:+918523880666" className="flex items-center gap-2 hover:text-corporate-sky transition-colors">
+            <a href="tel:+918523880666" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="h-4 w-4" />
-              <span>+91 8523880666</span>
+              <span>+91 8523-880666</span>
             </a>
             <span className="text-primary-foreground/40">|</span>
-            <a href="tel:+918919543489" className="hover:text-corporate-sky transition-colors">
+            <a href="tel:+918919543489" className="hover:text-primary transition-colors">
               +91 8919543489
             </a>
           </div>
@@ -65,13 +66,11 @@ export function Header() {
         <div className="container flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center text-primary-foreground font-bold text-xl shadow-md group-hover:shadow-lg transition-shadow">
-              AT
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground">AdityaTravels</span>
-              <span className="text-xs text-muted-foreground">On Time. Every Time. With Care.</span>
-            </div>
+            <img 
+              src={logo} 
+              alt="Aditya Travel Logo" 
+              className="h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}

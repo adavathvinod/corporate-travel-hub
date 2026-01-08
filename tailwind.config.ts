@@ -65,11 +65,14 @@ export default {
         },
         corporate: {
           navy: "hsl(var(--corporate-navy))",
+          red: "hsl(var(--corporate-red))",
+          crimson: "hsl(var(--corporate-crimson))",
+          slate: "hsl(var(--corporate-slate))",
+          gold: "hsl(var(--corporate-gold))",
+          green: "hsl(var(--corporate-green))",
+          // Legacy aliases
           blue: "hsl(var(--corporate-blue))",
           sky: "hsl(var(--corporate-sky))",
-          slate: "hsl(var(--corporate-slate))",
-          green: "hsl(var(--corporate-green))",
-          gold: "hsl(var(--corporate-gold))",
         },
       },
       borderRadius: {
@@ -112,9 +115,9 @@ export default {
         "pulse-slow": "pulse-slow 3s ease-in-out infinite",
       },
       boxShadow: {
-        corporate: "0 25px 50px -12px hsl(215 90% 32% / 0.25)",
-        card: "0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -2px hsl(215 25% 15% / 0.1)",
-        "card-hover": "0 20px 25px -5px hsl(215 25% 15% / 0.1), 0 8px 10px -6px hsl(215 25% 15% / 0.1)",
+        corporate: "0 25px 50px -12px hsl(0 75% 45% / 0.25)",
+        card: "0 4px 6px -1px hsl(0 0% 12% / 0.1), 0 2px 4px -2px hsl(0 0% 12% / 0.1)",
+        "card-hover": "0 20px 25px -5px hsl(0 0% 12% / 0.1), 0 8px 10px -6px hsl(0 0% 12% / 0.1)",
       },
     },
   },

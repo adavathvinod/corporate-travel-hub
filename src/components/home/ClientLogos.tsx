@@ -1,20 +1,22 @@
 const clients = [
-  { name: "TechCorp", initials: "TC" },
-  { name: "InfoSys", initials: "IS" },
-  { name: "DataWorks", initials: "DW" },
-  { name: "CloudNet", initials: "CN" },
-  { name: "FinServe", initials: "FS" },
-  { name: "MediaHub", initials: "MH" },
-  { name: "BuildPro", initials: "BP" },
-  { name: "GreenTech", initials: "GT" },
+  { name: "iCIMS", initials: "iC" },
+  { name: "Mitratech", initials: "MT" },
+  { name: "Cognitus", initials: "CG" },
+  { name: "SHI", initials: "SH" },
+  { name: "RESCOM", initials: "RC" },
+  { name: "Prolifics", initials: "PF" },
+  { name: "Houlihan Lokey", initials: "HL" },
 ];
 
 export function ClientLogos() {
   return (
     <section className="py-12 bg-muted/50 border-y border-border overflow-hidden">
       <div className="container">
-        <p className="text-center text-sm text-muted-foreground mb-8">
-          Trusted by leading corporations across India
+        <p className="text-center text-sm font-semibold text-primary mb-2">
+          Our Trusted Clients
+        </p>
+        <p className="text-center text-xs text-muted-foreground mb-8">
+          Trusted by Leading Corporates
         </p>
         
         <div className="relative">
@@ -22,13 +24,13 @@ export function ClientLogos() {
             {clients.map((client, index) => (
               <div 
                 key={client.name}
-                className="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity cursor-default"
+                className="flex items-center gap-2 opacity-70 hover:opacity-100 transition-opacity cursor-default"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className="w-10 h-10 rounded-lg bg-muted-foreground/10 flex items-center justify-center text-muted-foreground font-semibold text-sm">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm border border-primary/20">
                   {client.initials}
                 </div>
-                <span className="text-muted-foreground font-medium">{client.name}</span>
+                <span className="text-foreground font-medium">{client.name}</span>
               </div>
             ))}
           </div>
