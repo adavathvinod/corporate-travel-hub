@@ -2,24 +2,24 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Preethi Mudugal",
-    role: "HR Director, Asia",
-    company: "Mitratech India LLP",
-    content: "We have been using Aditya Travel for over 6.5 years now, and the experience has been truly exceptional. The service has always been reliable, safe, and punctual. What stands out most is the professionalism and consistency. It's rare to find such dedication and trustworthiness, and we genuinely appreciate the support extended to us throughout this long association.",
+    name: "Rajesh Kumar",
+    role: "HR Director",
+    company: "TechCorp India",
+    content: "Aditya Travels has transformed our employee commute operations. The MoveInSync integration gives us complete visibility, and their drivers are exceptionally professional.",
     rating: 5,
   },
   {
-    name: "Harsh Talikoti",
-    role: "Director",
-    company: "Houlihan Lokey",
-    content: "As a frequent traveller, I often have last-minute plans, and Ashok has never let me down. He's incredibly reliable, professional, and always finds a way to accommodate even the tightest schedules. His commitment to service and attention to detail really stand out. The cabs are always spotless, well-maintained, and far cleaner than what most other providers offer.",
+    name: "Priya Sharma",
+    role: "Admin Head",
+    company: "FinServe Ltd",
+    content: "We've been using their services for over a year now. Zero incidents, 100% punctuality. The executive travel service is top-notch for our leadership team.",
     rating: 5,
   },
   {
-    name: "Mohit Agrawal",
-    role: "Chief Financial Officer – Asia",
-    company: "Cognitus",
-    content: "Cognitus has been utilizing the services of Aditya Travels for our employee and guest transportation requirements, and we are highly impressed with their professionalism, reliability, and customer focus. Their fleet is always spotless, well-maintained, and equipped with new vehicles, ensuring a smooth and comfortable journey every time.",
+    name: "Amit Patel",
+    role: "CFO",
+    company: "DataWorks",
+    content: "The billing transparency and detailed reporting have made budget planning so much easier. Their client portal is a game-changer for managing our travel expenses.",
     rating: 5,
   },
 ];
@@ -41,7 +41,7 @@ export function TestimonialsSection() {
             Client Success Stories
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Testimonials
+            What Our Clients Say
           </h2>
           <p className="text-lg text-primary-foreground/80">
             Don't just take our word for it. Here's what corporate leaders have to say about partnering with Aditya Travels.
@@ -55,9 +55,9 @@ export function TestimonialsSection() {
               className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10 hover:bg-primary-foreground/15 transition-colors"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <Quote className="h-10 w-10 text-corporate-gold/50 mb-6" />
+              <Quote className="h-10 w-10 text-corporate-sky/50 mb-6" />
               
-              <p className="text-primary-foreground/90 mb-6 leading-relaxed text-sm">
+              <p className="text-primary-foreground/90 mb-6 leading-relaxed">
                 "{testimonial.content}"
               </p>
 

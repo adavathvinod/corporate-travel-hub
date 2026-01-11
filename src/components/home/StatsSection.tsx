@@ -2,10 +2,10 @@ import { useEffect, useState, useRef } from "react";
 import { Calendar, Users, Smile, Car } from "lucide-react";
 
 const stats = [
-  { icon: Calendar, value: 6, suffix: "+", label: "Years Experience", color: "text-primary" },
-  { icon: Users, value: 24, suffix: "+", label: "Professional Drivers", color: "text-corporate-gold" },
-  { icon: Smile, value: 7, suffix: "+", label: "Corporate Clients", color: "text-corporate-green" },
-  { icon: Car, value: 60, suffix: "+", label: "Trips Per Day", color: "text-primary" },
+  { icon: Calendar, value: 1, suffix: "+", label: "Years Experience", color: "text-primary" },
+  { icon: Users, value: 24, suffix: "", label: "Professional Drivers", color: "text-corporate-sky" },
+  { icon: Smile, value: 19, suffix: "+", label: "Satisfied Clients", color: "text-corporate-green" },
+  { icon: Car, value: 60, suffix: "+", label: "Trips Per Day", color: "text-corporate-gold" },
 ];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
@@ -52,16 +52,6 @@ export function StatsSection() {
   return (
     <section className="py-16 bg-card border-y border-border">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Our Achievements</h2>
-          <div className="max-w-2xl mx-auto space-y-2 text-muted-foreground">
-            <p>✓ Zero vehicle breakdowns since inception</p>
-            <p>✓ 100% client retention – every contract renewed year after year</p>
-            <p>✓ Excellent client feedback and trusted reputation in the IT commute space</p>
-            <p>✓ Seamless MoveInSync adoption, ensuring transparency and efficiency</p>
-          </div>
-        </div>
-        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div 
